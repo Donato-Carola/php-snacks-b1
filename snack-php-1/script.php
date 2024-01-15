@@ -27,7 +27,7 @@ $partite = [
     ],
 
 
-]
+];
 
 
 
@@ -38,3 +38,14 @@ $partite = [
 
 
 ?>
+
+<ul></ul>
+
+<?php foreach ($partite as $partites) { ?>
+    
+    <?php   echo "$partites"; ?>
+ 
+     
+<?php } ?>
+
+</ul>
