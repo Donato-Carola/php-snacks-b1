@@ -12,7 +12,7 @@ Olimpia Milano - Cantù | 55-60*/
 
 
 
-$partite = [
+$partites = [
     [
         'squadra1' => 'milano',
         'squadra2' =>'Cantù',
@@ -39,11 +39,16 @@ $partite = [
 
 ?>
 
-<ul></ul>
+<ul>
 
-<?php foreach ($partite as $partites) { ?>
+<?php foreach ($partites as $partite) { ?>
     
-    <?php   echo "$partites"; ?>
+   <li>
+    <pre>
+          <?php echo $partite['squadra1'] . ' - ' . $partite['squadra2'] . ' : ' . 
+          $partite['punteggio1'] . ' - ' . $partite['punteggio1'];  ?>
+   </pre>
+</li>
  
      
 <?php } ?>

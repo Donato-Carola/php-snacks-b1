@@ -1,8 +1,8 @@
 <?php    //espongo la media di due valori inseriti dall'utente con chiamata GET
    
-    
-   
-
+    $numberone=$_Get['numberOne'];
+    $numbertwo=$_Get['numberTwo'];
+    $media= (($numberone+$numbertwo)/2)
 
 
 ?>
@@ -28,6 +28,8 @@
      <input type="number" name="numberTwo" id="numberTwo">
 
   </form>
+
+  <h1>risultato: <?php  echo $media  ?> </h1>
 
 </body>
 </html>
