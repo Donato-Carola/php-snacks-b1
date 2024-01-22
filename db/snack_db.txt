@@ -1,0 +1,19 @@
+
+Selezionare tutti gli studenti il cui cognome finisce per "o"
+primo esercizio 
+
+
+SELECT *
+FROM `students`
+WHERE `surname` LIKE 'O%';
+
+secondo esercizio  Selezionare tutti gli appelli di esame con voto medio piu' alto di 28
+
+SELECT AVG(`vote`) , `exam_id`
+FROM `exam_student`
+
+GROUP BY `exam_id`;
+HAVING AVG(`vote`) > 28
+
+terzo esercizio    Selezionare tutti gli insegnanti che hanno la lettera s nel nome e il cui ufficio ha un numero maggiore di 96
+
